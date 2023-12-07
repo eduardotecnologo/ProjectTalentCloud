@@ -6,7 +6,7 @@
 * [Framework - React JS](https://react.dev) - O framework web usado
 * [Banco de Dados - Maria DB](https://mariadb.org) - Banco de Dados
 * [Figma](https://www.figma.com) - Layout
-* [VS Code] (https://code.visualstudio.com) Editor de Texto IDE
+* [VSCode](https://code.visualstudio.com) - Editor de Texto IDE
 
 ## Páginas
 -- Home  📌
