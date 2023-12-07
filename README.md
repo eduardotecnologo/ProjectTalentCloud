@@ -22,4 +22,4 @@
 - Kyska
 - Eduardo
 
-⌨️ com ❤️ por [Armstrong Lohãns](https://github.com/eduardotecnologo/ProjectTalentCloud) 😊
+⌨️ com ❤️ por [Equipe 05](https://github.com/eduardotecnologo/ProjectTalentCloud) 😊
