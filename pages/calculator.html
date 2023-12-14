@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/script.js"></script>
+    <title>Calculadora de IMC</title>
+    <div class="container">
+        <img src="../img/logo-imc.png" alt="Logo IMC Saudável">
+    </div>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="./pages/about.html">sobre</a></li>
+                <li><a href="./pages/calculadira.html">Calcule IMC</a></li>
+                <li><a href="./pages/depoimentos.html">Depoimentos</a></li>
+                <li><a href="./pages/registros.html">Registrar-se</a></li>
+                <li><a href="./pages/sair.html">sair</a></li>
+            </ul>
+        </div>
+    </nav>
+</head>
+<body>
+
+    <h1>Calculadora de IMC</h1>
+
+    <label for="weight">Peso (kg):</label>
+    <input type="number" id="weight" step="0.1" required><br>
+
+    <label for="height">Altura (m):</label>
+    <input type="number" id="height" step="0.01" required><br>
+
+    <button onclick="calculateIMC()">Calcular IMC</button>
+
+    <h2 id="result"></h2>
+
+</body>
+</html>
