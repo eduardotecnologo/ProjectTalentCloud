@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
-        // Função para calculadora
+        // Função para Calculadora
 function calculateIMC() {
     var weight = document.getElementById('weight').value;
     var height = document.getElementById('height').value;
