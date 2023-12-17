@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/script.js"></script>
-    <title>Calculadora de IMC</title>
+    <title>Cadastre-se</title>
+</head>
 <body>
     <header class="fixed-header">
         <div class="container">
@@ -16,8 +16,8 @@
                 <ul>
                   <li><a href="../index.html">Início</a></li>
                   <li><a href="./about.html">Sobre</a></li>
+                  <li><a href="./calculator.html">Calcule IMC</a></li>
                   <li><a href="./depositions.html">Depoimentos</a></li>
-                  <li><a href="./registros.html">Registrar-se</a></li>
                   <li><a href="./contact.html">Contato</a></li>
                 </ul>
             </nav>
@@ -26,18 +26,24 @@
             </div>
         </div>
     </header>
+    <h1>Formulário de Registro</h1>
 
-    <h1>Calculadora de IMC</h1>
+    <form>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
 
-    <label for="weight">Peso (kg):</label>
-    <input type="number" id="weight" step="0.1" required><br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
 
-    <label for="height">Altura (m):</label>
-    <input type="number" id="height" step="0.01" required><br>
+        <label for="password">Senha:</label>
+        <input type="password" id="password" name="password" required>
 
-    <button onclick="calculateIMC()">Calcular IMC</button>
+        <label for="confirmPassword">Confirmar Senha:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" required>
 
-    <h2 id="result"></h2>
+        <button type="submit">Registrar</button>
+    </form>
 
+    
 </body>
 </html>
