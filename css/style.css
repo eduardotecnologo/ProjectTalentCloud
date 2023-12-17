@@ -4,16 +4,6 @@ body {
     font-family: Arial, sans-serif;
 }
 
-.fixed-header {
-    background-color: #fff;
-    color: #fff;
-    padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
-
 .container {
     width: 80%;
     margin: 0 auto;
