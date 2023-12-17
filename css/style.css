@@ -27,7 +27,6 @@ nav ul li {
 nav ul li.active {
     background-color: #50C76A; /* Cor de fundo para o item ativo */
 }
-
 nav a {
     text-decoration: none;
     color: #000000;
@@ -44,7 +43,6 @@ nav a {
 .login-button button:hover {
     background-color: #45a049;
 }
-
 .content {
     margin-top: 80px;
     padding: 20px;
@@ -106,5 +104,7 @@ nav a {
 /*Configuração da tela de Depoimentos*/
 
 /*Configuração da tela de Registros*/
+
+/*Configuração da tela de Contatos*/
 
 /*Configuração da tela de Contatos*/
