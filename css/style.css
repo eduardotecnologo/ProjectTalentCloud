@@ -62,6 +62,83 @@ nav a {
 /* Página Início
 
 /* Página Sobre */
+.about-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.member {
+    flex: 1;
+    margin: 10px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.bio {
+    margin-top: 20px;
+}
+
+.flip {
+    transform: scaleX(-1);
+}
+
+.carousel {
+    background-color: #4caf50;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(145, 238, 124, 0.1);
+}
+
+.image-carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.image-carousel img {
+    max-width: 100%;
+    margin: 0 10px;
+    border-radius: 8px;
+}
+.about-footer footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.about-section .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.about-section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.about-section li {
+    margin-right: 10px;
+}
+
+.about-section a {
+    color: #fff;
+    text-decoration: none;
+}
 
 /* Página de Calculadora */
 .calculator-container {
