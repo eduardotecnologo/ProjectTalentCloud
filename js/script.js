@@ -1,4 +1,4 @@
-        // Função para marcar o item do menu ativo
+        // Função para marcar o item do menu ativo.
 document.addEventListener('DOMContentLoaded', function () {
     markActiveMenuItem();
 
