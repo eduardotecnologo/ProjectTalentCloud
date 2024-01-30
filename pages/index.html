@@ -3,42 +3,174 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <img src="ProjectTalentCloud/img/Captura de tela 2023-12-12 214043.png" width="200px" alt="Logo empresa">
-    <ul>
-        <li><a href="./pages/about.html">sobre</a></li>
-        <li><a href="./pages/calculadira.html">Calcule IMC</a></li>
-        <li><a href="./pages/depoimentos.html">Depoimentos</a></li>
-        <li><a href="./pages/registros.html">Registrar-se</a></li>
-        <li><a href="./pages/sair.html">sair</a></li>
-        <button type="submit">Login</button> 
-    </ul>
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img src="ProjectTalentCloud/img/renato-cariani.avif" width="600px" alt="Renato Cariani">    
-    <h2>Entenda como o Renato Cariani, renomado nutricionista, emprega o Índice de Massa Corporal (IMC) para otimizar e adaptar as dietas de seus clientes</h2>
-    <h1>Renato Cariani: Maximizando a Saúde com Estratégias Personalizadas de Dieta Utilizando o IMC</h1>
-    <p>Renato Cariani é reconhecido por sua abordagem inovadora na área da nutrição, especialmente ao usar o Índice de Massa Corporal (IMC) como uma ferramenta vital 
-    em suas estratégias dietéticas. Por meio de uma análise personalizada do IMC de seus clientes, Cariani elabora planos alimentares adaptados às necessidades individuais, 
-    considerando não apenas a perda de peso, mas também a composição corporal ideal para uma saúde ótima. Seu método mostra como o IMC pode ser uma ferramenta poderosa para 
-    direcionar dietas personalizadas e promover mudanças duradouras no estilo de vida</p>
-    <button type="submit">Leia agora</button> 
-    <button type="submit">Leia outras materias</button> 
-    <footer>
-        <!--Card 1-->
-        <div class="card">
-            <h2>Meu card numero 1</h2>
-            <p>Conteúdo fitness rápido</p>
+<!-- Header -->
+<header id="hero">
+    <div id="front-page">
+        <nav>
+            <div class="header container">        
+                <img src="../img/logo.png" alt="Logo empresa">
+                <ul id="nav-mobile" class="menu">
+                    <li><a href="./pages/about.html">Sobre</a></li>
+                    <li><a href="./pages/calculadora.html">Calcule IMC</a></li>
+                    <li><a href="./pages/depoimentos.html">Depoimentos</a></li>
+                    <li><a href="./pages/registros.html">Registrar-se</a></li>
+                    <li><a href="./pages/sair.html">Sair</a></li>
+                    <button class="login-btn" type="submit">Login</button>
+                </ul>
+            </div>
+        </nav>
+        <div id="value-proposition" class="container valign-wrapper">
+            <div>
+                <div class="row">
+                    <div class="col s12 m12 l7 x7">
+                        <img src="../img/renato-cariani.webp" alt="Renato Cariani" class="image-hover"> 
+                        <div class="text-container">
+                            <div>
+                                <h1>Renato Cariani: Maximizando a Saúde com Estratégias Personalizadas de Dieta utilizando o IMC</h1>
+                                <h2>Entenda como o Renato Cariani, renomado nutricionista, emprega o Índice de Massa Corporal (IMC) para otimizar e adaptar as dietas de seus clientes</h2>
+                                <p>Renato Cariani é reconhecido por sua abordagem inovadora na área da nutrição, especialmente ao usar o Índice de Massa Corporal (IMC) como uma ferramenta vital 
+                                    em suas estratégias dietéticas. Por meio de uma análise personalizada do IMC de seus clientes, Cariani elabora planos alimentares adaptados às necessidades individuais, 
+                                    considerando não apenas a perda de peso, mas também a composição corporal ideal para uma saúde ótima. Seu método mostra como o IMC pode ser uma ferramenta poderosa para 
+                                    direcionar dietas personalizadas e promover mudanças duradouras no estilo de vida</p>
+                            </div>
+                            <div class="button-container">
+                                <button class="read-btn" type="submit">Leia agora</button> 
+                                <button class="read-2-btn" type="submit">Leia outras matérias</button> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <!--Card 2-->
-        <div class="card">
-            <h2>Meu card numero 2</h2>
-            <p>Conteúdo fitness rápido</p>
+    </div>
+</header>
+
+<main>
+    <section id="call-to-scroll">
+        <div class="center-align cta">
+            <span class="bold-text">Veja os conteúdos personalizados para você</span>
+            <span class="arrow-down">&#9660;</span>
         </div>
-        <!--Card 3-->
-        <div class="card">
-            <h2>Meu card numero 3</h2>
-            <p>Conteúdo fitness rápido</p>
+    </section>
+    <section id="Cities" class="container">
+        <!-- 1st line -->
+        <div class="row">
+            <!-- City -->
+            <div class="col s12 m6 l3">
+                <!--Card-->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../img/Julio-Balestrin.png" alt="Julio Balestrin">
+                    </div>
+                    <div class="card-content">
+                        <p>Como ganhar massa muscular aos 40 anos?</p>
+                    </div>
+                    <div class="card-action">
+                        <div class="row">
+                            <a href="#" class="btn waves-effect waves-light col s12">Confira aqui</a>
+                        </div>
+                    </div>
+                </div>
+                <!--End Card-->
+            </div>
+            <!-- City -->
+            <div class="col s12 m6 l3">
+                <!--Card-->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../img/F3GVfqrXUAEDXKR.jpg">
+                    </div>
+                    <div class="card-content">
+                        <p>Veja como o seu IMC indica sua perda de peso</p>
+                    </div>
+                    <div class="card-action">
+                        <div class="row">
+                            <a href="#" class="btn waves-effect waves-light col s12">Confira aqui</a>
+                        </div>
+                    </div>
+                </div>
+                <!--End Card-->
+            </div>
+            <!-- City -->
+            <div class="col s12 m6 l3">
+                <!--Card-->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../img/fotofeminino.jpg" alt="Mulher treinando">
+                    </div>
+                    <div class="card-content">
+                        <p>Como adaptar os treinos à minha necessidade?</p>
+                    </div>
+                    <div class="card-action">
+                        <div class="row">
+                            <a href="#" class="btn waves-effect waves-light col s12">Confira aqui</a>
+                        </div>
+                    </div>
+                </div>
+                <!--End Card-->
+            </div>
+            <!-- City -->
+            <div class="col s12 m6 l3">
+                <!--Card-->
+                <div class="card">
+                    <div class="card-image">
+                        <img src="../img/cbum.webp" alt="Bhris Bumstead">
+                    </div>
+                    <div class="card-content">
+                        <p>Podcasts para ouvir sobre uma vida saudável</p>
+                    </div>
+                    <div class="card-action">
+                        <div class="row">
+                            <a href="#" class="btn waves-effect waves-light col s12">Confira aqui</a>
+                        </div>
+                    </div>
+                </div>
+                <!--End Card-->
+            </div>
+        </div>  
+    </section>
+</main>
+<!-- Footer -->
+<footer class="page-footer">
+    <div class="container" id="container-footer">
+        <div class="row">
+            <div class="col l5 s12">
+                <h5 class="white-text">IMC Saudável</h5>
+                <p class="grey-text text-lighten-4">Ensinamos pessoas que estão preocupadas com o 
+                    seu peso à conseguir equilibrar uma vida saudável e ter um corpo mais próximo
+                        do seu desejado.</p>
+            </div>
+            <div class="col l4 s12">
+                <h5 class="white-text">Os melhores Conteúdos</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" > Matérias com famosos</a></li>
+                    <li><a class="grey-text text-lighten-3"> Dicas para uma vida saudável com os melhores profissionais</a></li>
+                    <li><a class="grey-text text-lighten-3"> Exercícios personalizados</a></li>
+                    <li><a class="grey-text text-lighten-3"> Mitos sobre dietas</a></li>
+                    <li><a class="grey-text text-lighten-3"> Veja tudo aqui!</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Conteúdos grátis</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3"></a>Insta e Stories @IMC_Saudável</li>
+                    <li><a class="grey-text text-lighten-3"></a>Youtube IMC Saudável</li>
+                    <li><a class="grey-text text-lighten-3"></a>Artigos de como ter uma vida saudável</li>
+                    <li><a class="grey-text text-lighten-3"></a>Conecte-se conosco no Facebook</li>
+                </ul>
+            </div>
         </div>
-    </footer>
+        <div class="footer-copyright">
+            IMC Saudável é uma iniciativa Project Talent Cloud. CNPJ 36.546.362/0005-23. Termos de Uso | Política de Cancelamento,
+        </div>  
+    </div>                                
+</footer>
 </body>
 </html>
