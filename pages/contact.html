@@ -1,64 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
     <title>IMC Saudável</title>
 </head>
 <body>
-    <header>
+    <header class="fixed-header">
         <div class="container">
-            <img src="../img/logo-imc.png" alt="Logo IMC Saudável">
-        </div>
-        <nav>
-            <div class="container">
-                <ul>
-                    <li><a href="../index.html">sobre</a></li>
-                    <li><a href="./pages/about.html">sobre</a></li>
-                    <li><a href="./pages/calculadira.html">Calcule IMC</a></li>
-                    <li><a href="./pages/depoimentos.html">Depoimentos</a></li>
-                    <li><a href="./pages/registros.html">Registrar-se</a></li>
-                    <li><a href="./pages/sair.html">sair</a></li>
-                </ul>
+            <div class="logo">
+                <img src="../img/logo-imc.png" alt="Logo">
             </div>
-        </nav>
+            <nav>
+                <ul>
+                  <li><a href="../index.html">Início</a></li>
+                  <li><a href="./about.html">Sobre</a></li>
+                  <li><a href="./calculator.html">Calcule IMC</a></li>
+                  <li><a href="./depositions.html">Depoimentos</a></li>
+                  <li><a href="./registros.html">Registrar-se</a></li>
+                  <li><a href="./contact.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="login-button">
+                <button>Login</button>
+            </div>
+        </div>
     </header>
-    <div>
-        <h2>IMC Saudável</h2>
-        <p>
-            A boa saúde é fundamental para o bem-estar e a qualidade de vida de uma pessoa. 
-            Ela afeta todos os aspectos da vida, desde o desempenho diário até a capacidade de alcançar metas e 
-            desfrutar de uma vida plena. Aqui estão algumas razões que destacam a importância da boa saúde:</p>
+    <div class="contact-container">
+        <div class="form-container">
+            <h2>Entre em Contato</h2>
+            <form action="#" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+
+        <div class="info-container">
+            <p>
+                Entre em contato conosco para obter mais informações.
+            </p>
+            <img src="../img/contact-saude.jpg" alt="Imagem de Destaque">
+        </div>
     </div>
-    <h2>Vamos ficar em Contato</h2>
-
-    <form action="processa_formulario.php" method="post">
-        <label for="nome">Nome:</label>
-        <input type="text" id="nome" name="nome" required>
-
-        <label for="email">E-mail:</label>
-        <input type="email" id="email" name="email" required>
-
-        <label for="assunto">Whatsapp:</label>
-        <input type="text" id="assunto" name="assunto" required>
-
-        <label for="mensagem">Mensagem:</label>
-        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
-
-        <button type="submit">Enviar Mensagem</button>
-    </form>
-    <p>Boa saúde contribui diretamente para uma melhor qualidade de vida. 
-        Uma pessoa saudável é capaz de realizar suas atividades diárias sem restrições, 
-        aproveitar o tempo com a família e amigos e participar de atividades recreativas.
-    </p>
     <footer>
-        <div class="container">
-            <span>IMC Saudável</span>
-            <ul>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Linkedin</a></li>
-            </ul>
+        <div class="footer-container">
+            <div class="social-links">
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="../img/icons/facebook.png" alt="Facebook"></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="../img/icons/twitter.png" alt="Twitter"></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="../img/icons/instagram.png" alt="Instagram"></a>
+            </div>
+            <p>&copy; 2023 IMC Saudável. Todos os direitos reservados.</p>
         </div>
     </footer>
 </body>
