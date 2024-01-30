@@ -199,6 +199,60 @@ nav a {
 }
 /* Página de Depoimentos */
 
+.testimonial-slider {
+    width: 100%;
+    text-align: center;
+  }
+
+  .testimonial {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 80%; /* Defina a largura do depoimento conforme necessário */
+    display: inline-block;
+  }
+
+  .testimonial img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+  }
+
+  .testimonial p {
+    font-size: 14px;
+    color: #555;
+  }
+  .card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+
+  .card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  .card p {
+    font-size: 14px;
+    color: #555;
+  }
 /* Página de Registros */
 .register-container {
     display: flex;
