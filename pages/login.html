@@ -47,13 +47,13 @@
             // Previne o envio do formulário
             event.preventDefault();
             
-            // Obtém os valores dos campos
+            // Obtém o valor do campo de e-mail
             var email = document.getElementById("email").value;
-            var password = document.getElementById("password").value;
             
-            // Validação simples para garantir que os campos não estejam vazios
-            if(email.trim() === "" || password.trim() === "") {
-                alert("Por favor, preencha todos os campos.");
+            // Validação simples para garantir que o e-mail tenha um formato válido
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if(!emailRegex.test(email)) {
+                alert("Por favor, insira um endereço de e-mail válido.");
                 return;
             }
             
