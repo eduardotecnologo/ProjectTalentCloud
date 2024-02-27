@@ -66,3 +66,5 @@ function getClassification(imc) {
     var resultElement = document.getElementById('result');
     resultElement.innerHTML = "Seu IMC é: " + imc.toFixed(2);
 }
+
+// Formulário de Login

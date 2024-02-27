@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Sobre Nosotros</title>
-  <!-- Enlaces a archivos CSS y scripts JavaScript --->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/style.css">
-  <script src="scripts.js" defer></script>
-  <!-- menu principal -->
+  <title>Document</title>
 </head>
 <body>
   <header class="fixed-header">
@@ -22,15 +21,10 @@
               <li><a href="./depositions.html">Depoimentos</a></li>
               <li><a href="./registros.html">Registrar-se</a></li>
               <li><a href="./contact.html">Contato</a></li>
-
             </ul>
         </nav>
-        <div class="login-button">
-            <button>Login</button>
-        </div>
     </div>
 </header>
-<!-- Corpo da pagina -->
 
   <main>
     <section class="about-section">
@@ -82,26 +76,39 @@
     <aside class="carousel">
       <h2>Imágenes Alternas</h2>
       <div class="image-carousel">
-        <!-- Aquí irá el carrusel de imágenes -->
         <img src="https://static.biologianet.com/conteudo/images/ter-saude-nao-apenas-estar-sem-doencas-estar-bem-com-voce-mesmo-5400e4d257ef0.jpg" alt="Imagen 2">
-        <img src="https://static.biologianet.com/conteudo/images/ter-saude-nao-apenas-estar-sem-doencas-estar-bem-com-voce-mesmo-5400e4d257ef0.jpg" alt="Imagen 2">
+        <img src="https://www.comprecimed.com.br/cdn/shop/articles/pexels-nathan-cowley-1153370.jpg?v=1682343415&width=1100" alt="Imagen 2">
+        <img src="https://cetamdiagnostico.com.br/wp-content/uploads/2020/05/h%C3%A1bitos-para-uma-vida-mais-saud%C3%A1vel.jpg" alt="Imagen 2">
+        <img src="https://sportlife.com.br/wp-content/uploads/2022/10/ESTILO-DE-VIDA-SAUDAVEL-1.jpg" alt="Imagen 2">
         <!-- ... -->
       </div>
+      <div class="image-carousel">
+        <img src="https://www.casaredo.com/blog/wp-content/uploads/2021/12/dicas-alimentacao-saudavel.jpg" alt="Imagen 2">
+        <img src="https://blog.wokgrill.com.br/wp-content/uploads/2020/09/post_thumbnail-f13d36f3e990ae6d8e8ba7911b9e2d1d.jpeg" alt="Imagen 2">
+        <img src="https://www.blog.nadarte.com/wp-content/uploads/2019/07/original-96128f8398e2da37cd07debabd179357-1160x770.jpg" alt="Imagen 2">
+        <img src="https://www.otempo.com.br/image/contentid/policy:1.3178736:1692294009/image-10-dicas-para-um-estilo-de-vida-mais-saudavel.jpg" alt="Imagen 2">
+        <!-- ... -->
+      </div>
+      <script>
+        // Script opcional para adicionar uma rotação automática ao carrossel
+        const carousel = document.querySelector('.image-carousel');
+        let scrollAmount = 0;
+    
+        function scrollCarousel() {
+            scrollAmount += 200; // Largura de uma imagem
+            carousel.scrollTo({
+                left: scrollAmount,
+                behavior: 'smooth'
+            });
+            if (scrollAmount >= carousel.scrollWidth - carousel.clientWidth) {
+                scrollAmount = 0;
+            }
+        }
+    
+        setInterval(scrollCarousel, 3000); // Altera a imagem a cada 3 segundos
+    </script>
     </aside>
   </main>
 
-
-  <footer>
-    <!-- <div class="footer-container">
-        <div class="social-links">
-          <span>IMC Saudável</span>
-          <ul>
-              <li><a href="#">Facebook</a></li>
-              <li><a href="#">Instagram</a></li>
-              <li><a href="#">Linkedin</a></li>
-          </ul>
-        </div>
-    </div> -->
-  </footer>
 </body>
 </html>

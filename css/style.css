@@ -62,83 +62,51 @@ nav a {
 /* Página --- Início
 
 /* Página Sobre */
-.about-section {
-    text-align: center;
-    margin-bottom: 10px;
-}
-
-.team {
+main {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-section {
+    flex: 1;
+    padding: 20px;
+  }
+  .team {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.member {
-    flex: 1;
-    margin: 5px;
-    padding: 20px;
-    height: 60px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
-
-.bio {
-    margin-top: 20px;
-}
-
-.flip {
-    transform: scaleX(-1);
-}
-
-.carousel {
-    background-color: #4caf50;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(145, 238, 124, 0.1);
-}
-
-.image-carousel {
+    gap: 20px;
+  }
+  .member {
+    flex: 1 1 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 2px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-top: 20px;
+  }
+  .member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+  .bio {
+    text-align: center;
+  }
+  .carousel {
+    flex: 1;
+    padding: 20px;
+  }
+  .image-carousel {
+    display: flex;
+    overflow-x: auto;
+    gap: 10px;
+    scroll-behavior: smooth; /* Adiciona um comportamento de rolagem suave */
 }
 
 .image-carousel img {
     max-width: 100%;
-    margin: 0 10px;
-    border-radius: 8px;
-}
-.about-footer footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-}
-.about-section .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.about-section ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-}
-
-.about-section li {
-    margin-right: 10px;
-}
-
-.about-section a {
-    color: #fff;
-    text-decoration: none;
+    height: 400px;
+    transition: transform 0.5s ease; /* Adiciona uma transição suave ao transformar as imagens */
 }
 
 /* Página de Calculadora */
@@ -342,6 +310,7 @@ nav a {
     margin-top: 5px;
     margin-bottom: 15px;
     box-sizing: border-box;
+    width: 460px;
 }
 
 .contact-container button {
