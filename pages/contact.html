@@ -60,17 +60,17 @@
     </div>
     <div id="map" style="height: 400px;"></div>
     <script>
-        // Inicializa o mapa
-        var map = L.map('map').setView([51.505, -0.09], 13);
-    
+        // Inicializa o mapa centrado em Minas Gerais
+        var map = L.map('map').setView([-18.5122, -44.5550], 7);
+
         // Adiciona a camada do mapa do OpenStreetMap
         L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
         }).addTo(map);
-    
-        // Adiciona um marcador no mapa
-        L.marker([51.5, -0.09]).addTo(map)
-            .bindPopup('Um marcador aqui!')
+
+        // Adiciona um marcador no centro de Minas Gerais
+        L.marker([-18.5122, -44.5550]).addTo(map)
+            .bindPopup('Minas Gerais, Brasil')
             .openPopup();
     </script>
     
