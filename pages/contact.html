@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+    <!-- Inclua o CSS do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>IMC Saudável</title>
+</head>
+<body>
+    <header class="fixed-header">
+        <div class="container">
+            <div class="logo">
+                <img src="../img/logo-imc.png" alt="Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">Início</a></li>
+                    <li><a href="./about.html">Sobre</a></li>
+                    <li><a href="./calculator.html">Calcule IMC</a></li>
+                    <li><a href="./depositions.html">Depoimentos</a></li>
+                    <li><a href="./registros.html">Registrar-se</a></li>
+                    <li><a href="./contact.html">Contato</a></li>
+                    <!-- Botão para abrir o modal -->
+                    <li><button type="button" class="btn btn-success" data-toggle="modal" data-target="#loginModal">Login</button></li>
+                </ul>
+            </nav>  
+        </div>
+    </header>
+    <div class="contact-container">
+        <div class="form-container">
+            <h2>Entre em Contato</h2>
+            <form action="#" method="post">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="cep">Cep:</label>
+                <input type="cep" id="cep" name="cep" required>
+
+                <label for="message">Mensagem:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+
+        <div class="info-container">
+            <p>
+                Entre em contato conosco para obter mais informações.
+            </p>
+            <img src="../img/contact-saude.jpg" alt="Imagem de Destaque">
+        </div>
+    </div>
+    <div id="map" style="height: 400px;"></div>
+    <script>
+        // Inicializa o mapa centrado em Minas Gerais
+        var map = L.map('map').setView([-18.5122, -44.5550], 7);
+
+        // Adiciona a camada do mapa do OpenStreetMap
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        // Adiciona um marcador no centro de Minas Gerais
+        L.marker([-18.5122, -44.5550]).addTo(map)
+            .bindPopup('Minas Gerais, Brasil')
+            .openPopup();
+    </script>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="social-links">
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="../img/icons/facebook.png" alt="Facebook"></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="../img/icons/twitter.png" alt="Twitter"></a>
+                <a href="#" target="_blank" rel="noopener noreferrer"><img src="../img/icons/instagram.png" alt="Instagram"></a>
+            </div>
+            <p>&copy; 2023 IMC Saudável. Todos os direitos reservados..</p>
+        </div>
+    </footer>
+
+    <!-- Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="loginModalLabel">Formulário de Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm">
+                        <div class="form-group">
+                            <label for="username">Nome de usuário</label>
+                            <input type="text" class="form-control" id="username" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Senha</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <button type="submit" class="btn btn-success">Entrar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inclua o JavaScript do Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <!-- Javascript personalizado -->
+    <script src="../js/script.js"></script>
+</body>
+</html>
