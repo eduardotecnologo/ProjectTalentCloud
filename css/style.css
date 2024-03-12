@@ -24,6 +24,7 @@ body {
 nav ul {
     list-style: none;
     display: flex;
+    margin-top: 10px; /* movido de dentro do media query */
 }
 
 nav ul li {
@@ -59,25 +60,22 @@ nav a {
     margin-top: 80px;
     padding: 20px;
 }
-/* Página --- Início
 
 /* Página Sobre */
 main {
     display: flex;
     justify-content: space-between;
-  }
+}
 
-  .about-section {
+.about-section {
     text-align: center;
     margin-bottom: 10px;
-    width: 1160px;
 }
 
 .team {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    width: 700px;
 }
 
 .member {
@@ -85,7 +83,7 @@ main {
     flex: 1;
     margin: 5px;
     padding: 10px;
-    height: 350px;
+    height: 250px;
     background-color: #4caf50;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -105,15 +103,13 @@ main {
 }
 
 .text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    color: rgb(21, 19, 19);
-    background-color: #4caf50;
-    font-size: 14px;
-    text-align: center;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    margin-top: 20px; /* Adiciona margem no topo para posicionar abaixo do card */
 }
 
 .member:hover .flip {
@@ -124,21 +120,22 @@ main {
     opacity: 1;
 }
 
-  .carousel {
+.carousel {
     flex: 1;
     padding: 20px;
-  }
-  .image-carousel {
+}
+
+.image-carousel {
     display: flex;
     overflow-x: auto;
     gap: 10px;
-    scroll-behavior: smooth; /* Adiciona um comportamento de rolagem suave */
+    scroll-behavior: smooth;
 }
 
 .image-carousel img {
     max-width: 100%;
     height: 400px;
-    transition: transform 0.5s ease; /* Adiciona uma transição suave ao transformar as imagens */
+    transition: transform 0.5s ease;
 }
 
 /* Página de Calculadora */
@@ -152,16 +149,12 @@ main {
     max-width: 600px;
 }
 
-.calculator-container label {
-    display: block;
-    margin-top: 10px;
-}
-
+.calculator-container label,
 .calculator-container input {
+    display: block;
     width: 100%;
     padding: 8px;
     margin-top: 5px;
-    margin-bottom: 15px;
     box-sizing: border-box;
 }
 
@@ -188,7 +181,8 @@ main {
     border-collapse: collapse;
 }
 
-.calculator-container #result-table th, .calculator-container #result-table td {
+.calculator-container #result-table th,
+.calculator-container #result-table td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
@@ -198,14 +192,15 @@ main {
     background-color: #4caf50;
     color: white;
 }
-/* Página de Depoimentos */
 
+/* Página de Depoimentos */
 .testimonial-slider {
     width: 100%;
     text-align: center;
-  }
+}
 
-  .testimonial {
+.testimonial,
+.card {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -213,47 +208,28 @@ main {
     padding: 20px;
     width: 80%; /* Defina a largura do depoimento conforme necessário */
     display: inline-block;
-  }
+}
 
-  .testimonial img {
+.testimonial img {
     border-radius: 50%;
     width: 80px;
     height: 80px;
     margin-bottom: 10px;
-  }
+}
 
-  .testimonial p {
+.testimonial p,
+.card p {
     font-size: 14px;
     color: #555;
-  }
-  .card-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 20px;
-  }
+}
 
-  .card {
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px;
-    padding: 20px;
-    width: 300px;
-    text-align: center;
-  }
-
-  .card img {
+.card img {
     width: 100%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 10px;
-  }
+}
 
-  .card p {
-    font-size: 14px;
-    color: #555;
-  }
 /* Página de Registros */
 .register-container {
     display: flex;
@@ -277,18 +253,14 @@ main {
     text-align: center;
     color: #333;
 }
-.register-container label {
+
+.register-container label,
+.register-container input {
     margin: 10px 0 5px;
     color: #555;
-}
-
-.register-container input {
     width: 100%;
     padding: 8px;
-    margin-bottom: 10px;
     box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 4px;
 }
 
 .register-container button {
@@ -300,6 +272,7 @@ main {
     cursor: pointer;
     width: 100%;
 }
+
 .register-container button:hover {
     background-color: #45a049;
 }
@@ -321,7 +294,7 @@ main {
     padding: 30px;
 }
 
-.form-container h2 {
+.contact-container h2 {
     color: #333;
 }
 
@@ -332,17 +305,14 @@ main {
     margin-right: 20px;
 }
 
-.contact-container label {
-    margin-top: 10px;
-}
-
+.contact-container label,
 .contact-container input,
 .contact-container textarea {
     padding: 10px;
     margin-top: 5px;
     margin-bottom: 15px;
     box-sizing: border-box;
-    width: 460px;
+    width: 100%;
 }
 
 .contact-container button {
