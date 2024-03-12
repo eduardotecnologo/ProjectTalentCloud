@@ -3,52 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./css/slide.css">
+    <script src="./js/pagina-inicial.js" defer></script>
+<!-- Links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <title>IMC Saudável</title>
 </head>
-<body>
-    <header class="fixed-header">
-        <div class="container">
-            <div class="logo">
-                <img src="img/logo-imc.png" alt="Logo">
-            </div>
+<!-- Header -->
+    <header id="hero">
+        <div id="front-page">
             <nav>
-                <ul>
-                    <li><a href="../index.html">Início</a></li>
-                    <li><a href="./pages/about.html">Sobre</a></li>
-                    <li><a href="./pages/calculator.html">Calcule IMC</a></li>
-                    <li><a href="./pages/depositions.html">Depoimentos</a></li>
-                    <li><a href="./pages/registros.html">Registrar-se</a></li>
-                    <li><a href="./pages/contact.html">Contato</a></li>
-                </ul>
+                <div class="header container">        
+                    <img src="./img/logo.png" alt="Logo empresa">
+                    <ul id="nav-mobile" class="menu">
+                        <li><a href="./pages/about.html">Sobre</a></li>
+                        <li><a href="./pages/calculator.html">Calcule IMC</a></li>
+                        <li><a href="./pages/depoimentos.html">Depoimentos</a></li>
+                        <li><a href="./pages/registros.html">Registrar-se</a></li>
+                        <li><a href="./pages/sair.html">Sair</a></li>
+                        <button class="login-btn" type="submit">Login</button>
+                    </ul>
+                </div>
             </nav>
         </div>
     </header>
-    <img src="renato-cariani.avif" width="600px" alt="Renato Cariani">    
-    <h2>Entenda como o Renato Cariani, renomado nutricionista, emprega o Índice de Massa Corporal (IMC) para otimizar e adaptar as dietas de seus clientes</h2>
-    <h1>Renato Cariani: Maximizando a Saúde com Estratégias Personalizadas de Dieta Utilizando o IMC</h1>
-    <p>Renato Cariani é reconhecido por sua abordagem inovadora na área da nutrição, especialmente ao usar o Índice de Massa Corporal (IMC) como uma ferramenta vital 
-    em suas estratégias dietéticas. Por meio de uma análise personalizada do IMC de seus clientes, Cariani elabora planos alimentares adaptados às necessidades individuais, 
-    considerando não apenas a perda de peso, mas também a composição corporal ideal para uma saúde ótima. Seu método mostra como o IMC pode ser uma ferramenta poderosa para 
-    direcionar dietas personalizadas e promover mudanças duradouras no estilo de vida</p>
-    <button type="submit">Leia agora</button> 
-    <button type="submit">Leia outras materias</button> 
-    <footer>
-        <!--Card 1-->
-        <div class="card">
-            <h2>Meu card numero 1</h2>
-            <p>Conteúdo fitness rápido</p>
+    <section class="slider">
+        <div class="slider-content">
+            <input id="radio1" class="manual-btn" type="radio" name="r" value="1">
+            <input id="radio2" class="manual-btn" type="radio" name="r" value="2">
+            <input id="radio3" class="manual-btn" type="radio" name="r" value="3">
+            
+            <div class="slide-box first">
+                <a href="/ProjectTalentCloud/pages/noticiainterna2.html"><img class="img-desktop" src="./img/Chris Bumstead_desktop.jpg" alt="Chris Bumstead atual campeão do Mr. Olympia"></a>
+                <a href="/ProjectTalentCloud/pages/noticiainterna2.html"><img class="img-mobile" src="./img/Chris Bumstead.jpg" alt="Chris Bumstead atual campeão do Mr. Olympia"></a>
+                <h1>Chris Bumstead</h1>
+                <p>O atual campeão do Mr. Olympia, Chris Bumstead, compartilha seus segredos de treinamento para uma musculatura definida aos fãs em suas redes sociais</p>
+                <div class="button-container">
+                    <button class="read-btn" type="submit">Leia agora</button> 
+                    <button class="read-2-btn" type="submit">Leia outras matérias</button> 
+                </div>
+            </div>
+
+            <div class="slide-box second">
+                <a href="/ProjectTalentCloud/pages/noticiainterna1.html"><img class="img-desktop" src="./img/Alexandre Pato_desktop.webp" alt="Alexandre Pato, grande atleta internacional"></a>
+                <a href="/ProjectTalentCloud/pages/noticiainterna1.html"><img class="img-mobile" src="./img/Alexandre Pato.webp" alt="Alexandre Pato, grande atleta internacional"></a>
+                <h1>Alexandre Pato</h1>
+                <p>Resiliência e Bem-Estar: A Jornada de Alexandre Pato para uma Vida Saudável Após Lesões</p>
+                <div class="button-container">
+                    <button class="read-btn" type="submit">Leia agora</button> 
+                    <button class="read-2-btn" type="submit">Leia outras matérias</button> 
+                </div>
+            </div>
+
+            <div class="slide-box third">
+                <a href="/ProjectTalentCloud/pages/noticiainterna3.html"><img class="img-desktop" src="./img/Michael Phelps_desktop.jpg" alt="Maior medalhista olimpico de todos os tempos"></a>
+                <a href="/ProjectTalentCloud/pages/noticiainterna3.html"><img class="img-mobile" src="./img/Michael Phelps.jpg" alt="Chris Bumstead atual campeão do Mr. Olympia"></a>
+                <h1>Michael Phelps</h1>
+                <p>O lendário nadador Michael Phelps, maior medalhista olímpico de todos os tempos, lança uma nova linha de produtos para atletas, visando promover um estilo de vida saudável e ativo</p>
+                <div class="button-container">
+                    <button class="read-btn" type="submit">Leia agora</button> 
+                    <button class="read-2-btn" type="submit">Leia outras matérias</button> 
+                </div>
+            </div>
+            
+            <div class="nav-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+            </div>
+
+            <div class="nav-manual">
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio1" class="manual-btn"></label>
+                <label for="radio1" class="manual-btn"></label>
+            </div>
         </div>
-        <!--Card 2-->
-        <div class="card">
-            <h2>Meu card numero 2</h2>
-            <p>Conteúdo fitness rápido</p>
+    </section>
+</header>
+
+<main>
+    <section id="call-to-scroll">
+        <div class="center-align cta">
+            <span class="bold-text">Veja os conteúdos personalizados para você</span>
+            <span class="arrow-down">&#9660;</span>
         </div>
-        <!--Card 3-->
-        <div class="card">
-            <h2>Meu card numero 3</h2>
-            <p>Conteúdo fitness rápido</p>
+    </section>
+</main>
+<!-- Footer -->
+<footer class="page-footer">
+    <div class="container" id="container-footer">
+        <div class="row">
+            <div class="col l5 s12">
+                <h5 class="white-text">IMC Saudável</h5>
+                <p class="grey-text text-lighten-4">Ensinamos pessoas que estão preocupadas com o 
+                    seu peso à conseguir equilibrar uma vida saudável e ter um corpo mais próximo
+                        do seu desejado.</p>
+            </div>
+            <div class="col l4 s12">
+                <h5 class="white-text">Os melhores Conteúdos</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3"> Matérias com famosos</a></li>
+                    <li><a class="grey-text text-lighten-3"> Dicas para uma vida saudável com os melhores profissionais</a></li>
+                    <li><a class="grey-text text-lighten-3"> Exercícios personalizados</a></li>
+                    <li><a class="grey-text text-lighten-3"> Mitos sobre dietas</a></li>
+                    <li><a class="grey-text text-lighten-3"> Veja tudo aqui!</a></li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Conteúdos grátis</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3"></a>Insta e Stories @IMC_Saudável</li>
+                    <li><a class="grey-text text-lighten-3"></a>Youtube IMC Saudável</li>
+                    <li><a class="grey-text text-lighten-3"></a>Artigos de como ter uma vida saudável</li>
+                    <li><a class="grey-text text-lighten-3"></a>Conecte-se conosco no Facebook</li>
+                </ul>
+            </div>
         </div>
-    </footer>
+        <div class="footer-copyright">
+            IMC Saudável é uma iniciativa Project Talent Cloud. CNPJ 36.546.362/0005-23. Termos de Uso | Política de Cancelamento
+        </div>  
+    </div>                                
+</footer>
 </body>
 </html>
