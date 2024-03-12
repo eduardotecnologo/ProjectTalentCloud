@@ -3,8 +3,8 @@ article,aside,details,figcaption,figure,/*footer*/ header,hgroup,main,nav,sectio
 }
 audio,canvas,video{
     display:inline-block;
-    display:inline;
-    zoom: 1;
+    *display:inline;
+    *zoom: 1;
 }
 audio:not([controls]){
     display:none;
@@ -2242,5 +2242,4 @@ div.header.container {
 
 .imagem-sobreposta {
     height: 1050px; 
-}
 }
